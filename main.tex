@@ -1,0 +1,343 @@
+%-------------------------
+% Resume in Latex
+% Author : Arkadeep Das, Manas Daruka, Ayush Sharma, Abhinav Gupta
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1},\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Ponakala Hanuma Sai Krishna} % Your Name
+\newcommand{\course}{B.Tech - Electronics and Electrical Engineering} % Your Course
+\newcommand{\roll}{ 220108042} % Your Roll No.
+\newcommand{\phone}{6303852752} % Your Phone Number
+\newcommand{\emaila}{ponakala@iitg.ac.in} %Email 1
+\newcommand{\emailb}{hanumasaikrishna21@gmail.com} %Email 2
+\newcommand{\github}{hanumasaikrish21} %Github
+\newcommand{\website}{https://github.com/hanumasaikrish21} %Website
+\newcommand{\linkedin}{hanumasaikrish21} %linkedin
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+\parbox{2.35cm}{%
+
+\includegraphics[width=2cm,clip]{iitg_logo.jpg}
+
+}\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} & +91-\phone\\
+  {Roll Number:\roll} & \href{mailto:\emaila}{\emaila} \\
+  \course &  \href{mailto:\emailb}{\emailb}\\
+  {Indian Institute of Technology, Guwahati} &  \href{https://github.com/\github}{GitHub} $|$ \href{https://www.linkedin.com/in/\linkedin/}{LinkedIn}\\
+   
+\end{tabularx}
+}
+
+
+\vspace{-0.30cm}
+%-----------EDUCATION-----------------
+% \section{Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Indian Institute of Technology Guwahati}{Guwahati, India}
+%       {Bachelor of Technology in Mathematics and Computing ;  GPA: 8.10}{July. 2015 -- July. 2019 (Expected)}
+%     \resumeSubheading
+%       {Burdwan Model School}{Burdwan, W.B}
+%       {Central Board of Secondary Education (Class XII);  Percentage: 96.60}{March. 2015}
+%   \resumeSubHeadingListEnd\vspace{-3mm}
+\section{Education}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+% \renewcommand{\arraystretch}{1.1} % Default value: 1
+\small{\begin{tabularx}
+{\dimexpr\textwidth-3mm\relax}{|c|C|c|c|}
+  \hline
+  \textbf{Degree/Certificate } & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year}\\
+  \hline
+  B.Tech & Indian Institute of Technology, Guwahati & 8.14(Current) & 2022-Present\\
+  \hline
+  Senior Secondary & Board of Intermediate Education, Andhra Pradesh & 94.1\% & 2022\\
+  \hline
+  Secondary & Board of Secondary Education, Andhra Pradesh & 100.0\% & 2020 \\
+  \hline
+\end{tabularx}}
+\vspace{-3mm}
+
+%-----------EXPERIENCE-----------------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {XYZ Company Name}{Location}
+%       {XXXXXXXXXXX \& YYYYYYYYYYYY Intern}{May 2019 - Jul. 2019}
+%       \resumeItemListStart
+%     \item {Work Done List 1}
+%     \item {Work Done List 2}
+%     % \item {More work done } .....
+%     \resumeItemListEnd
+    
+%     % \resumeSubheading
+%     %   {Company A}{Bengaluru, India}
+%     %   {API Developer \& Machine Learning Intern}{May. 2018 - Jul. 2018}
+%     %   \resumeItemListStart
+%     % \item {XXXXXXXXXXXXXXX}
+%     %     \item {YYYYYYYYYYYYYYYYYY}
+%     % \resumeItemListEnd
+      
+%   \resumeSubHeadingListEnd
+% \vspace{-5.5mm}
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProject
+      {SkyConnect} %Project Name
+      {Coding Club, IIT Guwahati} %Project Name, Location Name
+      {Jun. 2024} %Event Dates
+      {\href{https://github.com/hanumasaikrish21/AirlineManagement_CC_Summer_Project}{GitHub}} %Website
+   \resumeItemListStart
+    \item {Crafted a responsive and user-friendly flight booking interface using \textbf{ReactJS} and \textbf{Bootstrap}, ensuring an excellent user experience across all devices, providing seamless interaction on desktops and quick data access to the user.}
+
+    \item {Created \textbf{scalable backend infrastructure} with \textbf{NodeJS} and \textbf{MongoDB} for efficient data management of the user.}
+    \item {Designed intuitive \textbf{user-friendly interfaces} with personalized flight selection, booking and customer support features.}
+\resumeItemListEnd
+    
+    \resumeProject
+      {LiveConnect Video Chat Platform}
+      {Group Project}{Dec. 2023}{\href{https://github.com/hanumasaikrish21/video-chat-app-cc}{GitHub}}
+    \resumeItemListStart
+    \item {Developed a \textbf{Video Chat Application} with  \textbf{HTML}, \textbf{CSS} and  \textbf{JS} enabling real time audio and video interactions, integrated with text chat functionality and a collaborative white board feature for enhanced user engagement. }
+    \item {Developed the backend with \textbf{NodeJS} and \textbf{Express}, generating random rooms for managing user sessions seamlessly.}
+    \item {
+    Using client-side rendering in \textbf{EJS}, a P2P network was established using PeerJS and secure \textbf{Google authentication}.}
+\resumeItemListEnd
+    \resumeProject
+      {SortEase Visual Tool}
+      {Personal Project}{May. 2024}{\href{https://github.com/hanumasaikrish21/Sorting_Illustrator}{GitHub}}
+      \resumeItemListStart
+   \item {Developed a web application to visualize sorting algorithms with \textbf{dynamic bar graph representations} of input arrays.}
+
+        \item {Users can customize the \textbf{array size}, adjust the \textbf{sorting speed}, and observe the sorting process \textbf{step-by-step}.}
+\item {Utilized \textbf{HTML, CSS, JavaScript} and \textbf{Bootstrap} for web development, ensuring responsive and user-friendly design.}
+    \resumeItemListEnd
+
+
+    
+  \resumeSubHeadingListEnd
+\vspace{-9.0mm}
+
+
+\section{Technical Skills}
+ \resumeHeadingSkillStart
+  \resumeSubItem{Programming} % Category
+    {C, C++}
+ \resumeSubItem{Web Technologies} % Category
+    {HTML, CSS, JavaScript, NodeJS, BootStrap*}
+ \resumeSubItem{Database Management}
+ {MongoDB*, MySQL*} 
+ \resumeSubItem{Operating Systems} % Category
+    {MacOS, Windows*, Linux*} % Skills
+ \resumeSubItem{Others}
+ {Git, Latex, Verilog*}  
+\hfill \textit{\footnotesize{* Elementary proficiency}} \hspace{3mm}
+ \resumeHeadingSkillEnd
+\vspace{-3.25mm}
+
+\section{Key courses taken}
+\resumeHeadingSkillStart
+\resumeSubItem{Computer Science}
+ { Introduction to Computing, Computer Programming Lab
+.}
+ \resumeSubItem{Mathematics} % Category
+    { Linear Algebra, Differential Equations, Complex Analysis, Probability and Random Processes.}
+ \resumeSubItem{Electrical and Electronics} % Category
+    { Digital Circuits, Signals and Systems, Control Systems, Analog Circuits.} % Skills
+ \resumeHeadingSkillEnd
+\vspace{-3.5mm}
+
+\section{Achievements}
+\vspace{-0.2mm}
+\resumeSubHeadingListStart
+\resumePOR{CodeChef Starters 138 Division 4} % Award
+    { Secured a \textbf{Global Rank of 555} out of \textbf{19,182} candidates.} % Event
+    {2024} %Event Year
+\resumePOR{Joint Entrance Examination Mains 2022} % Award
+    { Secured \textbf{All India Rank of 2574} amongst \textbf{10 lakh} candidates.} % Event
+    {2022} %Event Year     
+\resumePOR{Joint Entrance Examination Mains B.Arch 2022} % Award
+    { Secured  \textbf{All India Rank of 56} amongst \textbf{1 lakh} candidates.} % Event
+    {2022} %Event Year     
+\resumePOR{Joint Entrance Examination Advanced 2022} % Award
+    { Secured  \textbf{All India Rank of 2310} amongst \textbf{1.6 lakh} candidates.} % Event
+    {2022} %Event Year  
+\resumePOR{AP EAPCET 2022} % Award
+    { Secured \textbf{State Rank of 827} amongst \textbf{1.9 lakh} candidates.} % Event
+    {2022} %Event Year    
+\resumePOR{TS EAMCET 2022} % Award
+    { Secured \textbf{State Rank of 662} amongst \textbf{1.7 lakh} candidates.} % Event
+    {2022} %Event Year 
+\resumePOR{KLEEE} % Award
+    { Secured \textbf{All India Rank of 4} amongst \textbf{0.6 lakh} candidates.} % Event
+    {2022} %Event Year 
+    \vspace{-2.5mm}
+\section{Positions of Responsibility}
+\vspace{-0.2cm}
+\resumePOR{Undergraduate Senator} % Award
+    { Students’ Gymkhana Council, IIT Guwahati.} % Event
+    {Mar. 2024 - ongoing} %Event Year 
+\resumeSubHeadingListStart
+\vspace{0.5em} % Adjust the space as needed
+- Elected as \textbf{one / seven} Undergraduate Senators at Students’ Gymkhana 
+  Council, by \textbf{4000+} undergrads  of the campus community comprising diverse student groups and organizations.
+\resumeSubHeadingListEnd
+\vspace{-0.5cm}
+\resumePOR{Convener, Establishment Subcommittee} % Award
+    { Students’ Gymkhana Council, IIT Guwahati.} % Event
+    {Jun. 2024 - ongoing} %Event Year 
+\resumeSubHeadingListStart
+\vspace{0.5em} % Adjust the space as needed
+- Focused on campus improvement initiatives and advocating for student concerns in the establishment sector.
+\resumeSubHeadingListEnd    
+
+\vspace{-0.8cm}
+\section{Extracurricular Activities}
+\vspace{-0.25cm}
+\resumePOR{Student Mentor, Cepstrum} % Award
+    { Mentored 4 juniors of Electronics and Electrical Engineering department \\ regarding various academic and co-curricular activities happening in the college throughout the year.} % Event
+    {2024} %Event Year 
+\vspace{-0.07cm}  
+\resumePOR{Inter Hostel Sports Meet-Spardha} % Award
+    {
+Represented Disang Hostel in Kabaddi and parade competitions.} % Event
+    {2024} %Event Year
+\resumePOR{NSS Volunteer} % Award
+    { Participated in the 75th Republic Day Parade at IIT Guwahati, as an envoy of NSS.} % Event
+    {2024} %Event Year  
+\resumeSubHeadingListEnd
+
+\vspace{-2mm}
+\hspace*{-5mm}\rule{1.035\textwidth}{0.1mm}
+
+
+%-------------------------------------------
+\end{document}
