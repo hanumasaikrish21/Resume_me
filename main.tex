@@ -7,6 +7,7 @@
 %---- Required Packages and Functions ----
 
 \documentclass[a4paper,11pt]{article}
+\setlength{\footskip}{4.1pt}
 \usepackage{latexsym}
 \usepackage{xcolor}
 \usepackage{float}
@@ -32,7 +33,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\geometry{left=0.8cm, top=0.8cm, right=0.8cm, bottom=0.8cm}
 % Adjust margins
 %\addtolength{\oddsidemargin}{-0.5in}
 %\addtolength{\evensidemargin}{-0.5in}
@@ -175,7 +176,7 @@
   \hline
   \textbf{Degree/Certificate } & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year}\\
   \hline
-  B.Tech & Indian Institute of Technology, Guwahati & 8.14(Current) & 2022-Present\\
+  B.Tech & Indian Institute of Technology, Guwahati & 8.10(Current) & 2022-Present\\
   \hline
   Senior Secondary & Board of Intermediate Education, Andhra Pradesh & 94.1\% & 2022\\
   \hline
@@ -210,59 +211,92 @@
 %-----------PROJECTS-----------------
 \section{Projects}
 \resumeSubHeadingListStart
+\vspace{-0.125cm}
     \resumeProject
-      {SkyConnect} %Project Name
-      {Coding Club, IIT Guwahati} %Project Name, Location Name
-      {Jun. 2024} %Event Dates
-      {\href{https://github.com/hanumasaikrish21/AirlineManagement_CC_Summer_Project}{GitHub}} %Website
-   \resumeItemListStart
-    \item {Crafted a responsive and user-friendly flight booking interface using \textbf{ReactJS} and \textbf{Bootstrap}, ensuring an excellent user experience across all devices, providing seamless interaction on desktops and quick data access to the user.}
+  {IITG SkillSphere} %Project Name
+  {Personal Project } %Org/Context
+  {Jun. 2025} %Timeline
+  {\href{https://github.com/hanumasaikrish21/IITG-SkillSphere}{GitHub}} %Link
+\resumeItemListStart
+  \item {Designed a centralized learning ecosystem tailored for IITG students, consolidating \textbf{courses, research papers, and peer reviews} into a single platform to improve accessibility and streamline the academic and skill-building experience.}
+  
+  \item {Implemented a robust \textbf{full-stack architecture} using \textbf{React, Node.js, Express, and MongoDB}, integrated with \textbf{Clerk} for secure authentication, \textbf{Stripe} for payment handling, and \textbf{Cloudinary} for scalable media storage, ensuring smooth workflows.}
+  
+  \item {Built a reliable automated enrollment and payment system using \textbf{webhooks}, which updated course access in real time after successful payments and reduced manual fixes, improving transaction reliability by \textbf{30\%}.}
 
-    \item {Created \textbf{scalable backend infrastructure} with \textbf{NodeJS} and \textbf{MongoDB} for efficient data management of the user.}
-    \item {Designed intuitive \textbf{user-friendly interfaces} with personalized flight selection, booking and customer support features.}
 \resumeItemListEnd
-    
-    \resumeProject
-      {LiveConnect Video Chat Platform}
-      {Group Project}{Dec. 2023}{\href{https://github.com/hanumasaikrish21/video-chat-app-cc}{GitHub}}
-    \resumeItemListStart
-    \item {Developed a \textbf{Video Chat Application} with  \textbf{HTML}, \textbf{CSS} and  \textbf{JS} enabling real time audio and video interactions, integrated with text chat functionality and a collaborative white board feature for enhanced user engagement. }
-    \item {Developed the backend with \textbf{NodeJS} and \textbf{Express}, generating random rooms for managing user sessions seamlessly.}
-    \item {
-    Using client-side rendering in \textbf{EJS}, a P2P network was established using PeerJS and secure \textbf{Google authentication}.}
+\vspace{-0.14cm}
+\resumeProject
+  {SkyConnect}
+  {Group Project, Coding Club, IIT Guwahati}
+  {Jun. 2024}
+  {\href{https://github.com/hanumasaikrish21/AirlineManagement_CC_Summer_Project}{GitHub}}
+\resumeItemListStart
+  \item {Crafted a responsive and user-friendly flight booking interface using \textbf{ReactJS} and \textbf{Bootstrap}, ensuring an excellent user experience across all devices, providing seamless interaction on desktops and quick data access to the user.}
+  
+  \item {Created a scalable \textbf{backend infrastructure} with \textbf{NodeJS} and \textbf{MongoDB} for handling user authentication, flight information, and booking records. Designed database models for flights and reservations, implemented APIs for searching and booking.}
+  
+  \item {Designed intuitive user-friendly interfaces with personalized flight selection, booking, and customer support features.}
 \resumeItemListEnd
-    \resumeProject
-      {SortEase Visual Tool}
-      {Personal Project}{May. 2024}{\href{https://github.com/hanumasaikrish21/Sorting_Illustrator}{GitHub}}
-      \resumeItemListStart
-   \item {Developed a web application to visualize sorting algorithms with \textbf{dynamic bar graph representations} of input arrays.}
 
-        \item {Users can customize the \textbf{array size}, adjust the \textbf{sorting speed}, and observe the sorting process \textbf{step-by-step}.}
-\item {Utilized \textbf{HTML, CSS, JavaScript} and \textbf{Bootstrap} for web development, ensuring responsive and user-friendly design.}
-    \resumeItemListEnd
+\vspace{-0.14cm}
+\resumeProject
+  {LiveConnect}
+  {Group Project}
+  {Dec. 2023}
+  {\href{https://github.com/hanumasaikrish21/video-chat-app-cc}{GitHub}}
+\resumeItemListStart
+  \item {Built a Video Chat Application that allows users to connect in real-time through both audio and video, including a chat feature for enhanced communication, interactive user engagement, and seamless experience.}
+  
+ \item {Developed the backend with \textbf{NodeJS} and \textbf{Express}, generating random rooms to manage user sessions seamlessly, and implemented reliable socket connections for real-time signaling and efficient handling of multiple participants.}
+
+  
+  \item {Using client-side rendering in \textbf{EJS}, a P2P network was established with \textbf{PeerJS} for direct communication between users, along with secure \textbf{Google authentication} for safe and simple logins.}
+\resumeItemListEnd
 
 
-    
-  \resumeSubHeadingListEnd
+\vspace{-0.14cm}
+ \resumeProject
+  {WorkSphere}
+  {Personal Project}
+  {Dec. 2024}
+  {\href{https://github.com/hanumasaikrish21/WorkSphere}{GitHub}}
+\resumeItemListStart
+  \item {Built a task management platform where admins can create and assign tasks while employees can update progress, with role-based authentication to separate access levels.}
+  
+  \item {Developed with \textbf{JavaScript, HTML, and Tailwind CSS} for the frontend, and a simple backend using \textbf{Node.js, Express, and MongoDB} to store users, tasks, and updates. Implemented basic real-time updates to know the current task status.}
+  
+  \item {Added task categorization to organize work more effectively, making it easier to manage both individual and team projects.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
 \vspace{-9.0mm}
 
 
-\section{Technical Skills}
- \resumeHeadingSkillStart
-  \resumeSubItem{Programming} % Category
-    {C, C++}
- \resumeSubItem{Web Technologies} % Category
-    {HTML, CSS, JavaScript, NodeJS, BootStrap*}
- \resumeSubItem{Database Management}
- {MongoDB*, MySQL*} 
- \resumeSubItem{Operating Systems} % Category
-    {MacOS, Windows*, Linux*} % Skills
- \resumeSubItem{Others}
- {Git, Latex, Verilog*}  
-\hfill \textit{\footnotesize{* Elementary proficiency}} \hspace{3mm}
- \resumeHeadingSkillEnd
-\vspace{-3.25mm}
 
+\section{Technical Skills}
+\setlength{\columnsep}{0pt} 
+\vspace{-0.08cm}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*, nosep]
+  \item \textbf{Programming Languages:} C, C++
+  \vspace{0.06cm}
+  \item \textbf{Web Technologies:} HTML, CSS, NodeJS, ReactJS,\\ TailwindCSS, Socket.IO*, BootStrap*
+  \vspace{0.06cm}
+  \item \textbf{Database Management:} MySQL, MongoDB
+  \vspace{0.06cm}
+  \item \textbf{Operating Systems:} MacOS, Windows*, Linux*
+  \vspace{0.06cm}
+  \item \textbf{Miscellaneous:} Git, LaTeX, MATLAB
+  
+  
+\end{itemize}
+\end{multicols}
+
+\hfill \textit{\footnotesize{* Elementary proficiency}}
+
+\vspace{-0.85cm}
 \section{Key courses taken}
 \resumeHeadingSkillStart
 \resumeSubItem{Computer Science}
@@ -278,9 +312,6 @@
 \section{Achievements}
 \vspace{-0.2mm}
 \resumeSubHeadingListStart
-\resumePOR{CodeChef Starters 138 Division 4} % Award
-    { Secured a \textbf{Global Rank of 555} out of \textbf{19,182} candidates.} % Event
-    {2024} %Event Year
 \resumePOR{Joint Entrance Examination Mains 2022} % Award
     { Secured \textbf{All India Rank of 2574} amongst \textbf{10 lakh} candidates.} % Event
     {2022} %Event Year     
@@ -296,43 +327,44 @@
 \resumePOR{TS EAMCET 2022} % Award
     { Secured \textbf{State Rank of 662} amongst \textbf{1.7 lakh} candidates.} % Event
     {2022} %Event Year 
-\resumePOR{KLEEE} % Award
-    { Secured \textbf{All India Rank of 4} amongst \textbf{0.6 lakh} candidates.} % Event
-    {2022} %Event Year 
     \vspace{-2.5mm}
-\section{Positions of Responsibility}
-\vspace{-0.2cm}
-\resumePOR{Undergraduate Senator} % Award
-    { Students’ Gymkhana Council, IIT Guwahati.} % Event
-    {Mar. 2024 - ongoing} %Event Year 
-\resumeSubHeadingListStart
-\vspace{0.5em} % Adjust the space as needed
-- Elected as \textbf{one / seven} Undergraduate Senators at Students’ Gymkhana 
-  Council, by \textbf{4000+} undergrads  of the campus community comprising diverse student groups and organizations.
-\resumeSubHeadingListEnd
-\vspace{-0.5cm}
-\resumePOR{Convener, Establishment Subcommittee} % Award
-    { Students’ Gymkhana Council, IIT Guwahati.} % Event
-    {Jun. 2024 - ongoing} %Event Year 
-\resumeSubHeadingListStart
-\vspace{0.5em} % Adjust the space as needed
-- Focused on campus improvement initiatives and advocating for student concerns in the establishment sector.
-\resumeSubHeadingListEnd    
+% \section{Positions of Responsibility}
+% \vspace{-0.2cm}
+% \resumePOR{Undergraduate Senator} % Award
+%     { Students’ Gymkhana Council, IIT Guwahati.} % Event
+%     {Mar. 2024 - ongoing} %Event Year 
+% \resumeSubHeadingListStart
+% \vspace{0.5em} % Adjust the space as needed
+% - Elected as \textbf{one / seven} Undergraduate Senators at Students’ Gymkhana 
+%   Council, by \textbf{4000+} undergrads  of the campus community comprising diverse student groups and organizations.
+% \resumeSubHeadingListEnd
+% \vspace{-0.5cm}
+% \resumePOR{Convener, Establishment Subcommittee} % Award
+%     { Students’ Gymkhana Council, IIT Guwahati.} % Event
+%     {Jun. 2024 - ongoing} %Event Year 
+% \resumeSubHeadingListStart
+% \vspace{0.5em} % Adjust the space as needed
+% - Focused on campus improvement initiatives and advocating for student concerns in the establishment sector.
+% \resumeSubHeadingListEnd    
 
-\vspace{-0.8cm}
-\section{Extracurricular Activities}
+\section{Positions of Responsibility And Extracurricular Activities}
 \vspace{-0.25cm}
+\resumePOR{UnderGraduate Senator}{Students’ Gymkhana Council, IIT Guwahati. Elected as one of seven senators by \\4000+ undergraduates, representing diverse student groups, and worked on campus development initiatives.}{2024}
+\vspace{-0.06cm}
+\resumePOR{Convener, Establishment Subcommittee}{Students’ Gymkhana Council, IIT Guwahati. Led establishment-related \\initiatives, secured approval for multiple agendas, including introducing a bus service from the airport to campus.}{2024}
+
+
+\vspace{-0.06cm}
+
 \resumePOR{Student Mentor, Cepstrum} % Award
-    { Mentored 4 juniors of Electronics and Electrical Engineering department \\ regarding various academic and co-curricular activities happening in the college throughout the year.} % Event
+    { Actively mentored 4 juniors of the Electronics and Electrical Engineering department \\regarding various academic and co-curricular activities throughout their overall academic year.} % Event
     {2024} %Event Year 
 \vspace{-0.07cm}  
 \resumePOR{Inter Hostel Sports Meet-Spardha} % Award
     {
-Represented Disang Hostel in Kabaddi and parade competitions.} % Event
+Represented Disang Hostel in Kabaddi, Yoga and parade competitions.} % Event
     {2024} %Event Year
-\resumePOR{NSS Volunteer} % Award
-    { Participated in the 75th Republic Day Parade at IIT Guwahati, as an envoy of NSS.} % Event
-    {2024} %Event Year  
+ 
 \resumeSubHeadingListEnd
 
 \vspace{-2mm}
